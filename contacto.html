@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: auto;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background: #fff;
+        }
+        .input-group img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .ubicacion {
+            margin-top: 20px;
+        }
+        .ubicacion iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: #007BFF;">Contáctanos</h2>
+        <form action="enviar.php" method="POST">
+            <div class="input-group">
+                <img src="imagenes/images.jpg" alt="Icono Nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="input-group">
+                <img src="imagenes/whatsapp.png" alt="Icono Teléfono">
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+            </div>
+            <div class="input-group">
+                <img src="imagenes/descarga.jpg" alt="Icono Mensaje">
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="ubicacion">
+            <h3 style="color: #007BFF;">Ubicación</h3>
+            <p>Nos encontramos en la siguiente dirección:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29746.92427573953!2d-98.79452628758182!3d21.256993644935392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d6ea629521c211%3A0x1716958385862cf!2s79960%20Tamazunchale%2C%20S.LP!5e0!3m2!1ses!2smx!4v1743468037438!5m2!1ses!2smx" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+</html>

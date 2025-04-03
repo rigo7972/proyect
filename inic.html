@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .galeria {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contenedor-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .imagen {
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .imagen img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .imagen:hover img {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .imagen p {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section class="galeria">
+        <h2>Galería de Productos</h2>
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="imagenes/img1.jpg" alt="Descripción 1">
+                <p>Celulares</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img23.jpg" alt="Descripción 2">
+                <p>Laptops y computadoras de escritorio</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img3.jpg" alt="Descripción 3">
+                <p>Tabletas</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img4.jpg" alt="Descripción 4">
+                <p>Auriculares Bluetooth</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img5.jpg" alt="Descripción 5">
+                <p>Relojes Inteligentes</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img6.jpg" alt="Descripción 6">
+                <p>Bocinas Bluetooth portátiles</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img7.jpg" alt="Descripción 7">
+                <p>Drones</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img8.jpg" alt="Descripción 8">
+                <p>Cámaras Digitales</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img9.jpg" alt="Descripción 9">
+                <p>Cargadores portátiles</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img10.jpg" alt="Descripción 10">
+                <p>Monitores de computadora</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img11.jpg" alt="Descripción 11">
+                <p>Teclados inalámbricos</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img12.jpg" alt="Descripción 12">
+                <p>Mouse inalámbrico</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img13.jpg" alt="Descripción 13">
+                <p>Consolas de Videojuegos</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img14.jpg" alt="Descripción 14">
+                <p>Smart TV</p>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img15.jpg" alt="Descripción 15">
+                <p>Cámaras de seguridad inteligentes</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

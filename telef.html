@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teléfonos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-box {
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-box:hover {
+            transform: scale(1.1);
+        }
+
+        .image-box img {
+            width: 200px; 
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .image-box:hover img {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .image-box:hover .description {
+            opacity: 1;
+            transform: translateY(0);
+        }
+		
+		   .comprar {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .comprar:hover {
+            background-color: #0056b3;
+        }
+
+        .price {
+            font-size: 14px;
+            color: #555;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <img src="imagenes/descarga (1).jpeg" alt="Apple iPhone 14">
+            <p class="description">Apple iPhone 14</p>
+            <p class="price">$13,599 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+        <div class="image-box">
+            <img src="imagenes/images (1).jpeg" alt="Galaxy A55 5G">
+            <p class="description">Galaxy A55 5G</p>
+            <p class="price">$8,499 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+        <div class="image-box">
+            <img src="imagenes/100187941.jpeg" alt="Moto G34 5G">
+            <p class="description">Moto G34 5G</p>
+            <p class="price">$5,099 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="imagenes/images (5).jpg" alt="Apple iPhone 14">
+            <p class="description">samsung s21</p>
+            <p class="price">$16,699 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+        <div class="image-box">
+            <img src="imagenes/im.3.jpg" alt="Galaxy A55 5G">
+            <p class="description">Oppo 13pro</p>
+            <p class="price">$15,400 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+        <div class="image-box">
+            <img src="imagenes/images (6).jpg" alt="Moto G34 5G">
+            <p class="description">Huawei Nova 10</p>
+            <p class="price">$17,000 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+    </div>
+</body>
+</html>
+
+

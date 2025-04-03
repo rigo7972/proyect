@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .ofertas {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .contenedor-ofertas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .producto {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .producto img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .producto img:hover {
+            transform: scale(1.1);
+        }
+
+        .precio {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .tachado {
+            text-decoration: line-through;
+            color: red;
+        }
+
+        .descuento {
+            font-weight: bold;
+            color: green;
+        }
+
+        .comprar {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .comprar:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .contenedor-ofertas {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="ofertas">
+        <h2>Ofertas Especiales</h2>
+        <div class="contenedor-ofertas">
+            <div class="producto">
+                <img src="imagenes/imagen1.jpg" alt="Multímetro Digital">
+                <h3>Multímetro Digital</h3>
+                <p class="precio">Antes: <span class="tachado">$500</span> Ahora: <span class="descuento">$350</span></p>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/imagen2.jpg" alt="Cámara de Seguridad">
+                <h3>Cámara de Seguridad WiFi</h3>
+                <p class="precio">Antes: <span class="tachado">$1200</span> Ahora: <span class="descuento">$850</span></p>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/imagen3.jpg" alt="Regulador de Voltaje">
+                <h3>Regulador de Voltaje</h3>
+                <p class="precio">Antes: <span class="tachado">$750</span> Ahora: <span class="descuento">$600</span></p>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/imagen4.jpg" alt="Lámpara LED">
+                <h3>Lámpara LED</h3>
+                <p class="precio">Antes: <span class="tachado">$300</span> Ahora: <span class="descuento">$200</span></p>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/imagen5.jpg" alt="Cable HDMI">
+                <h3>Cable HDMI </h3>
+                <p class="precio">Antes: <span class="tachado">$150</span> Ahora: <span class="descuento">$100</span></p>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/imagen6.jpg" alt="Enchufe Inteligente">
+                <h3>Enchufe Inteligente WiFi</h3>
+                <p class="precio">Antes: <span class="tachado">$500</span> Ahora: <span class="descuento">$350</span></p>
+                <button class="comprar">Comprar</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

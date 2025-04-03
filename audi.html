@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-box {
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-box:hover {
+            transform: scale(1.1);
+        }
+
+        .image-box img {
+            width: 200px; 
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .image-box:hover img {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .image-box:hover .description {
+            opacity: 1;
+            transform: translateY(0);
+        }
+		
+		   .comprar {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .comprar:hover {
+            background-color: #0056b3;
+        }
+
+        .price {
+            font-size: 14px;
+            color: #555;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+             <img src="imagenes/5152Ma+uPHL._AC_UF894,1000_QL80_.jpg" alt="Descripción 1">
+             <p class="description">TP-Logitech</p>
+            <p class="price">$899 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+        <div class="image-box">
+             <img src="imagenes/59dd2cad-f33a-460f-a8eb-6c43036d2060.jpg" alt="Descripción 2">
+         <p class="description">TL-WR850N</p>
+            <p class="price">$599 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+        <div class="image-box">
+           <img src="imagenes/descarga (2).jpg" alt="Descripción 2">
+            <p class="description">TL-WR850N</p>
+            <p class="price">$599 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="imagenes/515ftw-100140756.jpg" alt="Apple iPhone 14">
+            <p class="description">Ring Audifonos</p>
+            <p class="price">$7,899 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+        <div class="image-box">
+            <img src="imagenes/images (2).jpg" alt="Galaxy A55 5G">
+         <p class="description">Interface Ik Multimedia</p>
+            <p class="price">$1,899 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+        <div class="image-box">
+            <img src="imagenes/images (3).jpg" alt="Moto G34 5G">
+            <p class="description">DD Audio for Life</p>
+            <p class="price">$9,999 MXN</p>
+			 <button class="comprar">Comprar</button>
+        </div>
+    </div>
+</body>
+</html>
